@@ -1,5 +1,5 @@
 {
-  "name": "ac-sukoon",
+  "name": "@workspace/ac-sukoon-legacy",
   "version": "0.0.0",
   "private": true,
   "type": "module",

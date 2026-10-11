@@ -12,12 +12,12 @@ paths = [ "/" ]
 localPort = 24120
 
 [services.development]
-run = "pnpm --filter ac-sukoon run dev"
+run = "pnpm --dir ../.. run dev"
 
 [services.production]
-build = [ "pnpm", "--filter", "ac-sukoon", "run", "build" ]
+build = [ "pnpm", "--dir", "../..", "run", "build" ]
 serve = "static"
-publicDir = "artifacts/ac-sukoon/dist/public"
+publicDir = "dist/public"
 
 [[services.production.rewrites]]
 from = "/*"
