@@ -4,16 +4,16 @@ Static public-interest journalism site for explaining its editorial process, bro
 
 ## Run & Operate
 
-- `pnpm install` — install workspace dependencies
-- `pnpm run dev` — start the root Vite app locally
-- `pnpm run lint` — run ESLint
-- `pnpm run build` — build the site; the artifact workflow supplies `BASE_PATH` and outputs to `dist/public`
+- `corepack npm ci` — install pinned workspace dependencies
+- `corepack npm run dev` — start the root Vite app locally
+- `corepack npm run lint` — run ESLint
+- `corepack npm run build` — build the site; the artifact workflow supplies `BASE_PATH` and outputs to `dist/public`
 - No database or backend service is required for the public site.
 
 ## Stack
 
 - React 19, React Router 6, Vite 7, JavaScript ES modules, plain CSS
-- pnpm workspace; root `package.json` owns the running Vite app
+- npm workspaces; root `package.json` owns the running Vite app
 - Static hosting with a single-page-app fallback for client-side routes
 
 ## Where things live

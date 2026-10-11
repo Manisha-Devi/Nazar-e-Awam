@@ -7,13 +7,13 @@ Nazar-e-Awam is a static public-interest journalism site. It explains the editor
 
 ## Run
 
-This Replit workspace uses pnpm:
+This project uses npm workspaces and pins npm through Corepack:
 
 ```sh
-pnpm install
-pnpm run dev
-pnpm run lint
-pnpm run build
+corepack npm ci
+corepack npm run dev
+corepack npm run lint
+corepack npm run build
 ```
 
 The Replit web workflow runs the root Vite app and supplies its port and base path. The static build is written to `dist/public` in that workflow; a local build without Replit's artifact environment writes to `dist`.
@@ -40,7 +40,7 @@ The project uses React 19, React Router 6, Vite 7, JavaScript modules, and plain
 
 Use the repository root as the project root:
 
-- Build command: `pnpm run build`
+- Build command: `corepack npm run build`
 - Build output directory: `dist`
 
 Configure an SPA fallback to `index.html` for application routes, while leaving real static files such as `robots.txt` and `sitemap.xml` accessible.

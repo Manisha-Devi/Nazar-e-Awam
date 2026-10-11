@@ -12,10 +12,10 @@ paths = [ "/" ]
 localPort = 24120
 
 [services.development]
-run = "pnpm --dir ../.. run dev"
+run = "corepack npm --prefix ../.. run dev"
 
 [services.production]
-build = [ "pnpm", "--dir", "../..", "run", "build" ]
+build = [ "corepack", "npm", "--prefix", "../..", "run", "build" ]
 serve = "static"
 publicDir = "dist/public"
 
