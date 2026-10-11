@@ -1,0 +1,1 @@
+- [Vite optimizer target](vite-esbuild-target.md) — keep dev dependency optimization and production builds on a modern JS target with this workspace's esbuild version.
