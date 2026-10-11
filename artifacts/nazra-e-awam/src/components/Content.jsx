@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export function PageIntro({ eyebrow = 'Nazra-e-Awam', title, description }) {
+export function PageIntro({ eyebrow = 'Nazar-e-Awam', title, description }) {
   return <header className="page-intro"><div className="container narrow"><div className="eyebrow">{eyebrow}</div><h1 className="page-title">{title}</h1>{description && <p className="lead">{description}</p>}</div></header>;
 }
 

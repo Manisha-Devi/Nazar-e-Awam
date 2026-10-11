@@ -4,7 +4,7 @@ const SITE = 'https://nazra-e-awam.com';
 
 export default function Metadata({ title, description, path = '/' }) {
   useEffect(() => {
-    const fullTitle = title ? `${title} | Nazra-e-Awam` : 'Nazra-e-Awam — Public Problems. Verified Facts. Official Responses.';
+    const fullTitle = title ? `${title} | Nazar-e-Awam` : 'Nazar-e-Awam — Public Problems. Verified Facts. Official Responses.';
     document.title = fullTitle;
     const canonicalUrl = `${SITE}${path === '/' ? '/' : path}`;
     const setMeta = (selector, attribute, value) => {

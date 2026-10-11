@@ -18,8 +18,8 @@ export function Submit() {
 }
 
 export function About() {
-  return <Page title="About Nazra-e-Awam" path="/about" eyebrow="Our purpose" description="An independent public-interest platform examining concerns through evidence, verification and the responses of concerned authorities.">
-    <Section title="Awam Ki Awaaz, Saboot Ke Saath."><p>Nazra-e-Awam receives public concerns, reviews available evidence, independently verifies relevant facts, seeks the concerned authority's official response, and publishes responsible reports when justified by evidence and public interest.</p><p>The platform is designed for people who may face difficulties raising questions, accessing official information or seeking accountability through existing channels.</p></Section>
+  return <Page title="About Nazar-e-Awam" path="/about" eyebrow="Our purpose" description="An independent public-interest platform examining concerns through evidence, verification and the responses of concerned authorities.">
+    <Section title="Awam Ki Awaaz, Saboot Ke Saath."><p>Nazar-e-Awam receives public concerns, reviews available evidence, independently verifies relevant facts, seeks the concerned authority's official response, and publishes responsible reports when justified by evidence and public interest.</p><p>The platform is designed for people who may face difficulties raising questions, accessing official information or seeking accountability through existing channels.</p></Section>
     <Section title="A publication, not a daily news feed"><p>We do not manufacture stories or allegations to fill a schedule. We review concerns, evaluate evidence and give relevant parties a fair opportunity to respond. Editorial standards determine whether a report is warranted.</p></Section>
     <Section title="What we do not promise"><ul><li>We do not guarantee coverage, publication, anonymity or action by an authority.</li><li>We do not accept payment for favourable coverage.</li><li>We do not treat an allegation as fact without verification.</li><li>We do not claim staff, awards, registration, an office or formal legal status that has not been published and verified.</li></ul></Section>
   </Page>;
@@ -59,7 +59,7 @@ export function Corrections() {
 }
 
 export function Privacy() {
-  return <Page title="Privacy policy" path="/privacy" eyebrow="Information care" description="This policy describes the limits and intended handling of information voluntarily sent to Nazra-e-Awam. The final policy must be reviewed against the actual hosting configuration and applicable law before launch.">
+  return <Page title="Privacy policy" path="/privacy" eyebrow="Information care" description="This policy describes the limits and intended handling of information voluntarily sent to Nazar-e-Awam. The final policy must be reviewed against the actual hosting configuration and applicable law before launch.">
     <Section title="Information sent by email"><p>If you email us, the message may contain your email address, contact information, the details you choose to share and attachments. We use this information to review a submission, assess evidence, seek clarification, consider a response or correction request, and communicate about the matter.</p></Section>
     <Section title="Private correspondence and publication"><p>Private correspondence is separate from published content and is not automatically published. If a report is considered, we assess whether information can be used safely and fairly. We minimise personal details and may redact identifying information where appropriate.</p></Section>
     <Section title="Access, retention and deletion"><p>Access to correspondence should be limited to people who need it for review. Information should be retained only as long as reasonably necessary for that purpose, accountability and applicable legal obligations, then securely deleted where feasible. These practices must be confirmed against actual email and hosting arrangements before launch; this statement is not a claim of secure storage.</p></Section>
@@ -81,7 +81,7 @@ export function Terms() {
 export function Governance() {
   return <Page title="Governance and transparency" path="/governance" eyebrow="Accountability" description="These are the principles intended to guide the project. Details that have not been verified are stated plainly, not inferred.">
     <Section title="Principles"><ul><li>Public-interest mission and evidence-led publication.</li><li>Editorial independence from funders and interested parties.</li><li>Transparent, explainable editorial decision-making.</li><li>Disclosure and management of relevant conflicts of interest.</li><li>Financial accountability and clear separation of funding decisions from editorial decisions.</li></ul></Section>
-    <Section title="Details not yet published"><p>Registration details: <strong>Not yet published.</strong></p><p>Governing members: <strong>Not yet published.</strong></p><p>Formal legal status: <strong>Not yet published.</strong></p><p>No registration number, board, nonprofit status or legal form is claimed here.</p></Section>
+    <Section title="Project status"><p>The project is preparing for formal registration. Confirmed details will be published when available.</p><p>Governing members: <strong>Not yet published.</strong></p><p>Formal legal status: <strong>Not yet published.</strong></p><p>No registration number, board, nonprofit status or legal form is claimed here.</p></Section>
   </Page>;
 }
 
@@ -110,7 +110,7 @@ export function Contact() {
     ['Privacy enquiries', 'Privacy Enquiry'],
   ];
   return <Page title="Contact" path="/contact" eyebrow="Get in touch" description="Email is the contact route for enquiries, submissions, corrections, right-of-reply requests and privacy questions.">
-    <Section title="Email Nazra-e-Awam"><p><a href="mailto:genz@nazar-e-awam.com">genz@nazar-e-awam.com</a></p><p>Choose the subject that best describes your message. Please do not send passwords, one-time codes, banking credentials, unnecessary identity documents or highly sensitive information through ordinary email.</p>{emailLinks.map(([label,subject])=><p key={label}><MailLink subject={subject}>{label} — email us</MailLink></p>)}</Section>
+    <Section title="Email Nazar-e-Awam"><p><a href="mailto:genz@nazar-e-awam.com">genz@nazar-e-awam.com</a></p><p>Choose the subject that best describes your message. Please do not send passwords, one-time codes, banking credentials, unnecessary identity documents or highly sensitive information through ordinary email.</p>{emailLinks.map(([label,subject])=><p key={label}><MailLink subject={subject}>{label} — email us</MailLink></p>)}</Section>
     <Section title="No office or phone listing"><p>No telephone number or physical office address is published here.</p></Section>
   </Page>;
 }
@@ -123,7 +123,7 @@ export function Accessibility() {
 }
 
 const pages = [
-  ['/','Home'], ['/cases','Verified cases'], ['/official-responses','Official responses'], ['/submit','Submit a public problem'], ['/about','About Nazra-e-Awam'], ['/editorial-policy','Editorial policy'], ['/verification','Verification methodology'], ['/right-of-reply','Right of reply'], ['/corrections','Corrections policy'], ['/privacy','Privacy policy'], ['/terms','Terms of use'], ['/governance','Governance and transparency'], ['/funding','Funding disclosure'], ['/open-source','Open-source project'], ['/contact','Contact'], ['/accessibility','Accessibility'], ['/sitemap','HTML sitemap'],
+  ['/','Home'], ['/cases','Verified cases'], ['/official-responses','Official responses'], ['/submit','Submit a public problem'], ['/about','About Nazar-e-Awam'], ['/editorial-policy','Editorial policy'], ['/verification','Verification methodology'], ['/right-of-reply','Right of reply'], ['/corrections','Corrections policy'], ['/privacy','Privacy policy'], ['/terms','Terms of use'], ['/governance','Governance and transparency'], ['/funding','Funding disclosure'], ['/open-source','Open-source project'], ['/contact','Contact'], ['/accessibility','Accessibility'], ['/sitemap','HTML sitemap'],
 ];
 export function Sitemap() {
   return <Page title="Sitemap" path="/sitemap" eyebrow="Find your way" description="A list of the public pages currently available on this site.">

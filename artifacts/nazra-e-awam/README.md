@@ -1,9 +1,9 @@
-# Nazra-e-Awam
+# Nazar-e-Awam
 
 **Public Problems. Verified Facts. Official Responses.**  
 *Awam Ki Awaaz, Saboot Ke Saath.*
 
-Nazra-e-Awam is a static public-interest journalism publication. It receives public concerns, reviews evidence, independently checks relevant facts, seeks the concerned authority's response, and publishes only when the evidence and public interest justify it. It is not a daily news feed, a complaint-management system, or a secure whistleblower portal.
+Nazar-e-Awam is a static public-interest journalism publication. It receives public concerns, reviews evidence, independently checks relevant facts, seeks the concerned authority's response, and publishes only when the evidence and public interest justify it. It is not a daily news feed, a complaint-management system, or a secure whistleblower portal.
 
 ## Important safety boundary
 

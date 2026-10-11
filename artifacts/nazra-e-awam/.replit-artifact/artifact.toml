@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Nazra-e-Awam"
+title = "Nazar-e-Awam"
 description = "A static public-interest journalism website for submitting concerns by email, reading verified reports, and reviewing official responses and editorial policies."
 version = "1.0.0"
 id = "artifacts/nazra-e-awam"

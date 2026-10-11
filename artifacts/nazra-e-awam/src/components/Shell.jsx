@@ -18,9 +18,9 @@ export function Header() {
   const close = () => setOpen(false);
   return <header className="site-header">
     <div className="header-inner">
-      <Link to="/" className="brand" onClick={close} aria-label="Nazra-e-Awam home">
+      <Link to="/" className="brand" onClick={close} aria-label="Nazar-e-Awam home">
         <span className="brand-mark" aria-hidden="true">ن</span>
-        <span><span className="brand-name">Nazra-e-Awam</span><span className="brand-note">Public-interest journalism</span></span>
+        <span><span className="brand-name">Nazar-e-Awam</span><span className="brand-note">Public-interest journalism</span></span>
       </Link>
       <nav className="desktop-nav" aria-label="Main navigation">
         {mainLinks.map(([url, label]) => <NavLink key={url} to={url} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
@@ -39,13 +39,13 @@ export function Footer() {
   return <footer className="site-footer">
     <div className="container footer-grid">
       <div className="footer-brand">
-        <Link to="/" className="brand"><span className="brand-mark" aria-hidden="true">ن</span><span className="brand-name">Nazra-e-Awam</span></Link>
+        <Link to="/" className="brand"><span className="brand-mark" aria-hidden="true">ن</span><span className="brand-name">Nazar-e-Awam</span></Link>
         <p>Public Problems. Verified Facts. Official Responses.<br />Awam Ki Awaaz, Saboot Ke Saath.</p>
         <a href="mailto:genz@nazar-e-awam.com?subject=General%20Enquiry">genz@nazar-e-awam.com</a>
       </div>
       {footerGroups.map(group => <section className="footer-column" key={group.title}><h2>{group.title}</h2><div className="footer-links">{group.links.map(([url, label]) => <Link to={url} key={url}>{label}</Link>)}</div></section>)}
     </div>
-    <div className="container footer-bottom"><span>Independent public-interest work. Publication is evidence-led and never guaranteed.</span><span>© {new Date().getFullYear()} Nazra-e-Awam</span></div>
+    <div className="container footer-bottom"><span>Independent public-interest work. Publication is evidence-led and never guaranteed.</span><span>© {new Date().getFullYear()} Nazar-e-Awam</span></div>
   </footer>;
 }
 
