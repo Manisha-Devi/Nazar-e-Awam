@@ -7,18 +7,26 @@ import { EmptyState, PageIntro } from '../components/Content';
 export function Cases() {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All categories');
+  const hasPublishedReports = articles.length > 0;
+  const hasActiveFilters = query.trim().length > 0 || category !== 'All categories';
   const categories = useMemo(() => ['All categories', ...new Set(articles.map(item => item.category).filter(Boolean))], []);
   const filtered = articles.filter(item => {
     const words = `${item.title} ${item.summary} ${item.category} ${(item.keywords || []).join(' ')}`.toLowerCase();
-    return words.includes(query.toLowerCase()) && (category === 'All categories' || item.category === category);
+    return words.includes(query.trim().toLowerCase()) && (category === 'All categories' || item.category === category);
   });
   return <>
     <Metadata title="Verified cases" path="/cases" description="Browse public reports published after evidence review, right of reply and editorial assessment." />
     <PageIntro eyebrow="Public record" title="Verified cases" description="Reports are published only after editorial review. Search titles and keywords, or narrow the record by category." />
     <section className="container narrow" style={{paddingTop:28,paddingBottom:70}}>
-      <div className="search-controls"><div className="field"><label htmlFor="case-search">Search reports</label><input id="case-search" type="search" value={query} onChange={event=>setQuery(event.target.value)} placeholder="Search title or keyword" /></div><div className="field"><label htmlFor="category-filter">Category</label><select id="category-filter" value={category} onChange={event=>setCategory(event.target.value)}>{categories.map(item=><option key={item}>{item}</option>)}</select></div></div>
-      <p className="results-note" aria-live="polite">{articles.length ? `${filtered.length} ${filtered.length === 1 ? 'report' : 'reports'} found.` : 'No reports are currently published.'}</p>
-      {filtered.length ? <div className="report-list">{filtered.map(item=><article className="report-card" key={item.slug}><div className="report-meta"><span>{item.category}</span>{item.location && <span>{item.location}</span>}</div><h2><Link to={`/cases/${item.slug}`}>{item.title}</Link></h2><p>{item.summary}</p><span className="date">Published {item.publishedAt}{item.updatedAt ? ` · Updated ${item.updatedAt}` : ''}</span></article>)}</div> : <EmptyState title="No verified reports have been published yet">Every submission is reviewed before publication. Allegations are not automatically treated as verified facts. {query || category !== 'All categories' ? 'Try changing your search or category.' : ''}</EmptyState>}
+      <div className="search-controls"><div className="field"><label htmlFor="case-search">Search reports</label><input id="case-search" data-testid="case-search" type="search" value={query} onChange={event=>setQuery(event.target.value)} placeholder="Search title or keyword" /></div><div className="field"><label htmlFor="category-filter">Category</label><select id="category-filter" data-testid="case-category-filter" value={category} onChange={event=>setCategory(event.target.value)}>{categories.map(item=><option key={item}>{item}</option>)}</select></div></div>
+      <p className="results-note" aria-live="polite">{hasPublishedReports ? `${filtered.length} ${filtered.length === 1 ? 'report' : 'reports'} found.` : 'No reports are currently published.'}</p>
+      {filtered.length ? <div className="report-list">{filtered.map(item=><article className="report-card" key={item.slug}><div className="report-meta"><span>{item.category}</span>{item.location && <span>{item.location}</span>}</div><h2><Link to={`/cases/${item.slug}`}>{item.title}</Link></h2><p>{item.summary}</p><span className="date">Published {item.publishedAt}{item.updatedAt ? ` · Updated ${item.updatedAt}` : ''}</span></article>)}</div> : hasPublishedReports
+        ? <EmptyState title="No reports match these filters">
+            {hasActiveFilters ? <>Try another keyword or category, or <button className="text-button" data-testid="clear-case-filters" type="button" onClick={() => { setQuery(''); setCategory('All categories'); }}>clear your filters</button>.</> : 'No published reports match the current listing.'}
+          </EmptyState>
+        : <EmptyState title="A careful start to the public record">
+            No verified reports have been published yet. Every submission is reviewed before publication. Allegations are not automatically treated as verified facts. Read <Link to="/verification">how verification works</Link> or <Link to="/submit">learn how to submit a concern</Link>.
+          </EmptyState>}
     </section>
   </>;
 }
