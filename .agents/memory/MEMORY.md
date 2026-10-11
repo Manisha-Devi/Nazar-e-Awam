@@ -1,0 +1,1 @@
+- [Package firewall behavior](package-firewall.md) — Replit can deny package tarballs while metadata resolves; check a current version and scope installs when unrelated workspace dependencies block.
