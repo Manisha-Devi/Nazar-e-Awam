@@ -26,7 +26,7 @@ export function Header() {
         {mainLinks.map(([url, label]) => <NavLink key={url} to={url} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
         <Link to="/submit" className="nav-submit">Submit a problem</Link>
       </nav>
-      <button className="menu-button" type="button" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? 'Close menu' : 'Menu'}</button>
+      <button className="menu-button" type="button" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? 'Close' : 'Menu'}</button>
     </div>
     {open && <nav id="mobile-navigation" className="mobile-nav" aria-label="Mobile navigation">
       {[...mainLinks, ['/editorial-policy', 'Editorial policy'], ['/verification', 'Verification'], ['/contact', 'Contact'], ['/submit', 'Submit a problem']].map(([url, label]) =>
