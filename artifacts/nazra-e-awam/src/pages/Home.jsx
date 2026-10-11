@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { articles } from '../data/articles';
 import { responses } from '../data/responses';
@@ -5,13 +6,34 @@ import { EmptyState, PolicyLinks } from '../components/Content';
 import Metadata from '../components/Metadata';
 
 export default function Home() {
+  const [taglineLanguage, setTaglineLanguage] = useState('ur');
+  const isUrdu = taglineLanguage === 'ur';
+
   return <>
     <Metadata path="/" description="An independent public-interest platform examining public concerns through evidence, verification and the responses of concerned authorities." />
     <section className="hero"><div className="container hero-grid">
       <div><div className="eyebrow">Awam Ki Awaaz, Saboot Ke Saath.</div><h1 className="display-title">Public Problems.<br />Verified Facts.<br />Official Responses.</h1><p className="lead">An independent public-interest platform examining public concerns through evidence, verification and the responses of concerned authorities.</p>
         <div className="actions"><Link className="button" to="/submit">Submit a Public Problem</Link><Link className="button secondary" to="/cases">Explore Verified Cases</Link></div>
       </div>
-      <aside className="hero-aside"><p className="urdu-line" lang="ur" dir="rtl">عوام کی آواز، ثبوت کے ساتھ</p><p>We do not manufacture a daily news cycle. We receive concerns, check what can be established, ask those involved to respond, then decide whether publication serves the public interest.</p><Link to="/editorial-policy">How we make editorial decisions →</Link></aside>
+      <aside className="hero-aside">
+        <div className="tagline-switch">
+          <p id="hero-tagline" className="urdu-line" lang={isUrdu ? 'ur' : 'en'} dir={isUrdu ? 'rtl' : 'ltr'} aria-live="polite">
+            {isUrdu ? 'عوام کی آواز، ثبوت کے ساتھ' : "The people's voice, backed by evidence."}
+          </p>
+          <button
+            className="language-toggle"
+            type="button"
+            data-testid="tagline-language-toggle"
+            aria-controls="hero-tagline"
+            aria-label={`Switch tagline to ${isUrdu ? 'English' : 'Urdu'}`}
+            aria-pressed={!isUrdu}
+            onClick={() => setTaglineLanguage(isUrdu ? 'en' : 'ur')}
+          >
+            {isUrdu ? 'EN' : 'UR'}
+          </button>
+        </div>
+        <p>We do not manufacture a daily news cycle. We receive concerns, check what can be established, ask those involved to respond, then decide whether publication serves the public interest.</p><Link to="/editorial-policy">How we make editorial decisions →</Link>
+      </aside>
     </div></section>
     <section className="band tinted"><div className="container mission-grid"><div><div className="eyebrow">Why this exists</div><h2 className="page-title" style={{fontSize:'42px'}}>A careful process for questions that matter.</h2></div><p className="mission-copy">People deserve a fair way to raise demonstrable public concerns. We assess evidence, seek the relevant authority’s account and publish only when the facts and public interest justify it.</p></div></section>
     <section className="band"><div className="container"><div className="section-heading"><div><div className="eyebrow">Our method</div><h2>Four steps. No shortcuts.</h2></div><p>Every concern is reviewed. A submission is not a finding, and publication is never promised.</p></div>
