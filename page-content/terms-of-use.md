@@ -26,3 +26,9 @@ Unless a specific page or source states otherwise, site text is provided for pub
 
 We aim to publish carefully and correct significant factual errors transparently. Nothing in these terms removes responsibilities that apply to our own publications under applicable law.
 
+## Disputes and jurisdiction
+
+To the extent permitted by applicable law, disputes arising out of or relating to these Terms or your use of this website shall be subject to the exclusive jurisdiction of the High Court of Jammu & Kashmir and Ladakh, but only where that court is legally competent to hear the dispute. If it is not, the matter must be brought before another court or forum with jurisdiction under applicable law. Nothing in this section restricts a mandatory legal forum or proceedings that cannot be limited by agreement.
+
+**Legal notice:** This wording is general information, not legal advice. A qualified lawyer familiar with applicable law in Jammu & Kashmir and Ladakh should review it before it is relied upon.
+
