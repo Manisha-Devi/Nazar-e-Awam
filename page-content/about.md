@@ -4,13 +4,13 @@
 
 **Eyebrow:** Our purpose
 
-An independent public-interest platform examining concerns through evidence, verification and the responses of concerned authorities.
+A nonprofit public-interest journalism project examining concerns through evidence, verification and the responses of concerned authorities.
 
 ## Awam Ki Awaaz, Saboot Ke Saath.
 
-Nazar-e-Awam receives public concerns, reviews available evidence, independently verifies relevant facts, seeks the concerned authority's official response, and publishes responsible reports when justified by evidence and public interest.
+Nazar-e-Awam is a nonprofit public-interest journalism project. It receives public concerns, reviews available evidence, independently verifies relevant facts, seeks the concerned authority's official response, and publishes responsible reports when justified by evidence and public interest.
 
-The platform is designed for people who may face difficulties raising questions, accessing official information or seeking accountability through existing channels.
+The project is designed for people who may face difficulties raising questions, accessing official information or seeking accountability through existing channels.
 
 ## A publication, not a daily news feed
 

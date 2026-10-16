@@ -1,6 +1,6 @@
 # Nazar-e-Awam
 
-Static public-interest journalism site for explaining its editorial process, browsing verified public reports and official responses, and contacting the editors.
+Nonprofit public-interest journalism site for explaining its editorial process, browsing verified public reports and official responses, and contacting the editors.
 
 ## Run & Operate
 

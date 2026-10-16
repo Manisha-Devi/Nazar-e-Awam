@@ -18,8 +18,8 @@ export function Submit() {
 }
 
 export function About() {
-  return <Page title="About Nazar-e-Awam" path="/about" eyebrow="Our purpose" description="An independent public-interest platform examining concerns through evidence, verification and the responses of concerned authorities.">
-    <Section title="Awam Ki Awaaz, Saboot Ke Saath."><p>Nazar-e-Awam receives public concerns, reviews available evidence, independently verifies relevant facts, seeks the concerned authority's official response, and publishes responsible reports when justified by evidence and public interest.</p><p>The platform is designed for people who may face difficulties raising questions, accessing official information or seeking accountability through existing channels.</p></Section>
+  return <Page title="About Nazar-e-Awam" path="/about" eyebrow="Our purpose" description="Nazar-e-Awam is a nonprofit public-interest journalism project examining concerns through evidence, verification and the responses of concerned authorities.">
+    <Section title="Awam Ki Awaaz, Saboot Ke Saath."><p>Nazar-e-Awam is a nonprofit public-interest journalism project. It receives public concerns, reviews available evidence, independently verifies relevant facts, seeks the concerned authority's official response, and publishes responsible reports when justified by evidence and public interest.</p><p>The project is designed for people who may face difficulties raising questions, accessing official information or seeking accountability through existing channels.</p></Section>
     <Section title="A publication, not a daily news feed"><p>We do not manufacture stories or allegations to fill a schedule. We review concerns, evaluate evidence and give relevant parties a fair opportunity to respond. Editorial standards determine whether a report is warranted.</p></Section>
     <Section title="What we do not promise"><ul><li>We do not guarantee coverage, publication, anonymity or action by an authority.</li><li>We do not accept payment for favourable coverage.</li><li>We do not treat an allegation as fact without verification.</li><li>We do not claim staff, awards, registration, an office or formal legal status that has not been published and verified.</li></ul></Section>
   </Page>;
@@ -82,7 +82,7 @@ export function Terms() {
 export function Governance() {
   return <Page title="Governance and transparency" path="/governance" eyebrow="Accountability" description="These are the principles intended to guide the project. Details that have not been verified are stated plainly, not inferred.">
     <Section title="Principles"><ul><li>Public-interest mission and evidence-led publication.</li><li>Editorial independence from funders and interested parties.</li><li>Transparent, explainable editorial decision-making.</li><li>Disclosure and management of relevant conflicts of interest.</li><li>Financial accountability and clear separation of funding decisions from editorial decisions.</li></ul></Section>
-    <Section title="Project status"><p>The project is preparing for formal registration. Confirmed details will be published when available.</p><p>Governing members: <strong>Not yet published.</strong></p><p>Formal legal status: <strong>Not yet published.</strong></p><p>No registration number, board, nonprofit status or legal form is claimed here.</p></Section>
+    <Section title="Project status"><p>The project has a nonprofit public-interest mission and is preparing for formal registration. Confirmed details will be published when available.</p><p>Governing members: <strong>Not yet published.</strong></p><p>Formal legal status: <strong>Not yet published.</strong></p><p>No registration number, registered board, or specific legal form is claimed here.</p></Section>
   </Page>;
 }
 
@@ -94,11 +94,11 @@ export function Funding() {
   </Page>;
 }
 
-export function OpenSource() {
-  return <Page title="Open-source project" path="/open-source" eyebrow="Project transparency" description="We intend to make the website source code publicly available so its structure can be understood and improved.">
-    <Section title="Repository status"><p><strong>Future GitHub repository:</strong> <span>Not yet published — repository URL to be added after a public repository is created.</span></p><p><strong>Licence:</strong> Pending. No licence is claimed until one is selected and added to the repository.</p></Section>
-    <Section title="Contributing"><p>Once the repository is public, contributions should explain the proposed change and its purpose. Report technical issues with a concise description and steps to reproduce. Do not use public issues for private corrections, source identities or sensitive case material; use the appropriate email contact.</p></Section>
-    <div className="callout"><strong>Never commit private submissions, personal data, credentials or confidential evidence.</strong> A public source repository is visible to everyone and is not a place to store correspondence or source material.</div>
+export function Nonprofit() {
+  return <Page title="Nonprofit project" path="/nonprofit" eyebrow="Our purpose" description="Nazar-e-Awam is a nonprofit public-interest journalism project. This page explains its mission and what is currently known about its formal organizational status.">
+    <Section title="A nonprofit public-interest mission"><p>Nazar-e-Awam works to examine public concerns through evidence, verification and the responses of concerned authorities. Its purpose is public-interest journalism.</p><p>Editorial decisions are guided by evidence, fairness and public value, not political affiliation, personal influence or payment. Funding information and the separation between funding and editorial decisions are described on the <Link to="/funding">funding disclosure page</Link>.</p></Section>
+    <Section title="Current legal and organizational status"><p>The project is preparing for formal registration. Its governing members, registration number and formal legal status have not yet been published.</p><p>This page describes the project's nonprofit mission. It does not claim that a registered nonprofit legal entity has been formed or state a specific legal form that has not been verified.</p></Section>
+    <Section title="Governance and contact"><p>Read the <Link to="/governance">governance and transparency page</Link> for the project's stated principles, or <Link to="/contact">contact the project</Link> with an enquiry.</p></Section>
   </Page>;
 }
 
@@ -124,7 +124,7 @@ export function Accessibility() {
 }
 
 const pages = [
-  ['/','Home'], ['/cases','Verified cases'], ['/official-responses','Official responses'], ['/submit','Submit a public problem'], ['/about','About Nazar-e-Awam'], ['/editorial-policy','Editorial policy'], ['/verification','Verification methodology'], ['/right-of-reply','Right of reply'], ['/corrections','Corrections policy'], ['/privacy','Privacy policy'], ['/terms','Terms of use'], ['/governance','Governance and transparency'], ['/funding','Funding disclosure'], ['/open-source','Open-source project'], ['/contact','Contact'], ['/accessibility','Accessibility'], ['/sitemap','HTML sitemap'],
+  ['/','Home'], ['/cases','Verified cases'], ['/official-responses','Official responses'], ['/submit','Submit a public problem'], ['/about','About Nazar-e-Awam'], ['/editorial-policy','Editorial policy'], ['/verification','Verification methodology'], ['/right-of-reply','Right of reply'], ['/corrections','Corrections policy'], ['/privacy','Privacy policy'], ['/terms','Terms of use'], ['/governance','Governance and transparency'], ['/funding','Funding disclosure'], ['/nonprofit','Nonprofit project'], ['/contact','Contact'], ['/accessibility','Accessibility'], ['/sitemap','HTML sitemap'],
 ];
 export function Sitemap() {
   return <Page title="Sitemap" path="/sitemap" eyebrow="Find your way" description="A list of the public pages currently available on this site.">

@@ -21,7 +21,7 @@ A list of the public pages currently available on this site.
 - Terms of use
 - Governance and transparency
 - Funding disclosure
-- Open-source project
+- Nonprofit project
 - Contact
 - Accessibility
 - HTML sitemap

@@ -17,7 +17,7 @@ export default function Metadata({ title, description, path = '/' }) {
       }
       element.setAttribute('content', value);
     };
-    const summary = description || 'An independent public-interest platform examining public concerns through evidence, verification and the responses of concerned authorities.';
+    const summary = description || 'A nonprofit public-interest journalism project examining public concerns through evidence, verification and the responses of concerned authorities.';
     setMeta('meta[name="description"]', ['name', 'description'], summary);
     setMeta('meta[property="og:title"]', ['property', 'og:title'], fullTitle);
     setMeta('meta[property="og:description"]', ['property', 'og:description'], summary);

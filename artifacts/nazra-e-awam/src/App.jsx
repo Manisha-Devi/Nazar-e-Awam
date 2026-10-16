@@ -1,9 +1,9 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { PageLayout } from './components/Shell';
 import Home from './pages/Home';
 import { Cases, ReportDetails } from './pages/Cases';
 import OfficialResponses from './pages/OfficialResponses';
-import { Accessibility, About, Contact, Corrections, EditorialPolicy, Funding, Governance, NotFound, OpenSource, Privacy, RightOfReply, Sitemap, Submit, Terms, Verification } from './pages/InformationPages';
+import { Accessibility, About, Contact, Corrections, EditorialPolicy, Funding, Governance, NotFound, Nonprofit, Privacy, RightOfReply, Sitemap, Submit, Terms, Verification } from './pages/InformationPages';
 
 export default function App() {
   return <BrowserRouter><PageLayout><Routes>
@@ -21,7 +21,8 @@ export default function App() {
     <Route path="/terms" element={<Terms />} />
     <Route path="/governance" element={<Governance />} />
     <Route path="/funding" element={<Funding />} />
-    <Route path="/open-source" element={<OpenSource />} />
+    <Route path="/nonprofit" element={<Nonprofit />} />
+    <Route path="/open-source" element={<Navigate to="/nonprofit" replace />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/accessibility" element={<Accessibility />} />
     <Route path="/sitemap" element={<Sitemap />} />

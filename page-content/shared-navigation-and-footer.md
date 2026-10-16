@@ -9,7 +9,7 @@ Skip to content
 ## Header
 
 - **Brand:** Nazar-e-Awam
-- **Brand note:** Public-interest journalism
+- **Brand note:** Nonprofit public-interest journalism
 - **Main navigation:** Verified cases · Official responses · About · Terms of use · Sitemap
 - **Main action:** Submit a problem
 - **Mobile menu controls:** Menu · Close
@@ -45,12 +45,12 @@ Awam Ki Awaaz, Saboot Ke Saath.
 
 - Governance
 - Funding
-- Open source
+- Nonprofit project
 - Contact
 - Accessibility
 - Sitemap
 
-**Footer note:** Independent public-interest work. Publication is evidence-led and never guaranteed.
+**Footer note:** Nonprofit public-interest work. Publication is evidence-led and never guaranteed.
 
 **Copyright:** © [current year] Nazar-e-Awam
 

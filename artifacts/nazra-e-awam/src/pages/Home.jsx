@@ -10,9 +10,9 @@ export default function Home() {
   const isUrdu = taglineLanguage === 'ur';
 
   return <>
-    <Metadata path="/" description="An independent public-interest platform examining public concerns through evidence, verification and the responses of concerned authorities." />
+    <Metadata path="/" description="A nonprofit public-interest journalism project examining public concerns through evidence, verification and the responses of concerned authorities." />
     <section className="hero"><div className="container hero-grid">
-      <div><div className="eyebrow">Awam Ki Awaaz, Saboot Ke Saath.</div><h1 className="display-title">Public Problems.<br />Verified Facts.<br />Official Responses.</h1><p className="lead">An independent public-interest platform examining public concerns through evidence, verification and the responses of concerned authorities.</p>
+      <div><div className="eyebrow">Awam Ki Awaaz, Saboot Ke Saath.</div><h1 className="display-title">Public Problems.<br />Verified Facts.<br />Official Responses.</h1><p className="lead">A nonprofit public-interest journalism project examining public concerns through evidence, verification and the responses of concerned authorities.</p>
         <div className="actions"><Link className="button" to="/submit">Submit a Public Problem</Link><Link className="button secondary" to="/cases">Explore Verified Cases</Link></div>
       </div>
       <aside className="hero-aside">

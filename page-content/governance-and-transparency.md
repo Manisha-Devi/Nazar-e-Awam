@@ -16,10 +16,10 @@ These are the principles intended to guide the project. Details that have not be
 
 ## Project status
 
-The project is preparing for formal registration. Confirmed details will be published when available.
+The project has a nonprofit public-interest mission and is preparing for formal registration. Confirmed details will be published when available.
 
 - **Governing members:** Not yet published.
 - **Formal legal status:** Not yet published.
 
-No registration number, board, nonprofit status or legal form is claimed here.
+No registration number, registered board, or specific legal form is claimed here.
 

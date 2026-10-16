@@ -10,7 +10,7 @@
 # Verified Facts.
 # Official Responses.
 
-An independent public-interest platform examining public concerns through evidence, verification and the responses of concerned authorities.
+A nonprofit public-interest journalism project examining public concerns through evidence, verification and the responses of concerned authorities.
 
 **Actions:** Submit a Public Problem · Explore Verified Cases
 

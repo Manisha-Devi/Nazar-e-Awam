@@ -3,7 +3,7 @@
 **Public Problems. Verified Facts. Official Responses.**  
 *Awam Ki Awaaz, Saboot Ke Saath.*
 
-Nazar-e-Awam is a static public-interest journalism site. It explains the editorial process, lets visitors browse verified reports and official responses, and provides contact links for submitting a concern.
+Nazar-e-Awam is a nonprofit public-interest journalism project. It explains the editorial process, lets visitors browse verified reports and official responses, and provides contact links for submitting a concern.
 
 ## Run
 

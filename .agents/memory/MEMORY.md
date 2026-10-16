@@ -1,2 +1,3 @@
 - [Package firewall behavior](package-firewall.md) — Replit can deny package tarballs while metadata resolves; check a current version and scope installs when unrelated workspace dependencies block.
 - [Root package commands](root-artifact-commands.md) — A root-level Vite app needs root-directed commands from its artifact workflow; package-name filtering may not select the workspace root.
+- [Nonprofit project identity](nonprofit-identity.md) — Describe Nazar-e-Awam as a nonprofit public-interest journalism project, not as an open-source project.
