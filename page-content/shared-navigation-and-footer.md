@@ -10,7 +10,7 @@ Skip to content
 
 - **Brand:** Nazar-e-Awam
 - **Brand note:** Public-interest journalism
-- **Main navigation:** Verified cases · Official responses · About
+- **Main navigation:** Verified cases · Official responses · About · Terms of use · Sitemap
 - **Main action:** Submit a problem
 - **Mobile menu controls:** Menu · Close
 
@@ -39,7 +39,7 @@ Awam Ki Awaaz, Saboot Ke Saath.
 - Right of reply
 - Corrections
 - Privacy
-- Terms
+- Terms of use
 
 ### About this project
 

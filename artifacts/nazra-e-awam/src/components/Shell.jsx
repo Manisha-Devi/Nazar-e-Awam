@@ -5,10 +5,12 @@ const mainLinks = [
   ['/cases', 'Verified cases'],
   ['/official-responses', 'Official responses'],
   ['/about', 'About'],
+  ['/terms', 'Terms of use'],
+  ['/sitemap', 'Sitemap'],
 ];
 const footerGroups = [
   { title: 'The work', links: [['/cases', 'Verified cases'], ['/official-responses', 'Official responses'], ['/submit', 'Submit a concern'], ['/verification', 'Verification']] },
-  { title: 'Standards', links: [['/editorial-policy', 'Editorial policy'], ['/right-of-reply', 'Right of reply'], ['/corrections', 'Corrections'], ['/privacy', 'Privacy'], ['/terms', 'Terms']] },
+  { title: 'Standards', links: [['/editorial-policy', 'Editorial policy'], ['/right-of-reply', 'Right of reply'], ['/corrections', 'Corrections'], ['/privacy', 'Privacy'], ['/terms', 'Terms of use']] },
   { title: 'About this project', links: [['/governance', 'Governance'], ['/funding', 'Funding'], ['/open-source', 'Open source'], ['/contact', 'Contact'], ['/accessibility', 'Accessibility'], ['/sitemap', 'Sitemap']] },
 ];
 
